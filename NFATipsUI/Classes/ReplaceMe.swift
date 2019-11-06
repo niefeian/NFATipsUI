@@ -1,7 +1,7 @@
 import NFAToolkit
 public extension NSObject{
     
-   public func noCount(_ str : String? , tip : String) -> Bool{
+    func noCount(_ str : String? , tip : String) -> Bool{
         if str?.count ?? 0 == 0 {
             if tip == "生日" {
                 showTipsWindow("出生日期" + "不能为空", delayTime: 2)
@@ -13,7 +13,7 @@ public extension NSObject{
         return false
     }
 
-   public func showTipsWindow(_ tips : String = "系统错误", delayTime : CGFloat = 2){
+    func showTipsWindow(_ tips : String = "系统错误", delayTime : CGFloat = 2){
 
         let tipsView =  AppWindow().viewWithTag(999) ?? UIView()
         tipsView.backgroundColor = colorConversion(colorValue: "000000", alpha: 0.8)
