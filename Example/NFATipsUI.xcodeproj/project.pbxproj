@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		1729F461A41738A3C2B47CED /* Pods_NFATipsUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFATipsUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2022679EAEB430E0DA850E /* Pods-NFATipsUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATipsUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NFATipsUI_Tests/Pods-NFATipsUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1C9275930ED34C79E22536CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1C9275930ED34C79E22536CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NFATipsUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFATipsUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		67CD4D255C8EF2B27ED8A5A2 /* Pods-NFATipsUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATipsUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-NFATipsUI_Example/Pods-NFATipsUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6898D21DBB7EA0A8E5A6FB8B /* NFATipsUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NFATipsUI.podspec; path = ../NFATipsUI.podspec; sourceTree = "<group>"; };
+		6898D21DBB7EA0A8E5A6FB8B /* NFATipsUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NFATipsUI.podspec; path = ../NFATipsUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3D3721ABE73802CB00893DE /* Pods-NFATipsUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATipsUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-NFATipsUI_Tests/Pods-NFATipsUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7AD37DDD312F071FA857D80 /* Pods_NFATipsUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFATipsUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01F10155D45D59384FC9C97 /* Pods-NFATipsUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATipsUI_Example.release.xcconfig"; path = "Target Support Files/Pods-NFATipsUI_Example/Pods-NFATipsUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FFDB65F7E7BCD334A287E2E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FFDB65F7E7BCD334A287E2E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				1B2022679EAEB430E0DA850E /* Pods-NFATipsUI_Tests.debug.xcconfig */,
 				A3D3721ABE73802CB00893DE /* Pods-NFATipsUI_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -315,10 +315,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NFATipsUI_Example/Pods-NFATipsUI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NFATipsUI/NFATipsUI.framework",
+				"${BUILT_PRODUCTS_DIR}/NFAToolkit/NFAToolkit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NFATipsUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NFAToolkit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +334,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NFATipsUI_Tests/Pods-NFATipsUI_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NFAToolkit/NFAToolkit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
@@ -339,6 +342,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NFAToolkit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
