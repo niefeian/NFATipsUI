@@ -1,6 +1,6 @@
 {
   "name": "NFATipsUI",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "summary": "A short description of NFATipsUI.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/niefeian/NFATipsUI",
@@ -13,15 +13,17 @@
   },
   "source": {
     "git": "https://github.com/niefeian/NFATipsUI.git",
-    "tag": "0.0.1"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "NFATipsUI/Classes/*",
+  "swift_versions": "5.0",
   "dependencies": {
     "NFAToolkit": [
 
     ]
-  }
+  },
+  "swift_version": "5.0"
 }
