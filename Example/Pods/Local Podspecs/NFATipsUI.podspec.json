@@ -1,6 +1,6 @@
 {
   "name": "NFATipsUI",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "summary": "A short description of NFATipsUI.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/niefeian/NFATipsUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/niefeian/NFATipsUI.git",
-    "tag": "0.0.4"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "8.0"
