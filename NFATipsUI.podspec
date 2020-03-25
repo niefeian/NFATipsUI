@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NFATipsUI'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = '提示框测试'
 
 # This description is used to generate tags and improve search results.

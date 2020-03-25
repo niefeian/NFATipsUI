@@ -22,6 +22,7 @@ public extension NSObject{
         AppWindow().addSubview(tipsView)
         let label = tipsView.viewWithTag(111) as? UILabel ?? UILabel()
         if label.tag != 111 {
+            label.tag = 111
             label.textAlignment  = .center
             label.textColor = UIColor.white
             label.font = UIFont.systemFont(ofSize: 14)
