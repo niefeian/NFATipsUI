@@ -1,9 +1,9 @@
 {
-  "name": "NFATipsUI",
+  "name": "NFAToolkit",
   "version": "0.1.0",
-  "summary": "提示框测试",
+  "summary": "普通工具类",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/niefeian/NFATipsUI",
+  "homepage": "https://github.com/niefeian/NFAToolkit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,18 +12,13 @@
     "335074307@qq.com": "872447993@qq.com"
   },
   "source": {
-    "git": "https://github.com/niefeian/NFATipsUI.git",
+    "git": "https://github.com/niefeian/NFAToolkit.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NFATipsUI/Classes/*",
+  "source_files": "NFAToolkit/Classes/**/*",
   "swift_versions": "5.0",
-  "dependencies": {
-    "NFAToolkit": [
-
-    ]
-  },
   "swift_version": "5.0"
 }

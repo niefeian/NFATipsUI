@@ -4,9 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - NFATipsUI (0.0.6):
+  - NFATipsUI (0.1.0):
     - NFAToolkit
-  - NFAToolkit (0.0.15)
+  - NFAToolkit (0.1.0)
   - Nimble (7.3.4)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
   - NFATipsUI (from `../`)
-  - NFAToolkit
+  - NFAToolkit (from `../../NFAToolkit`)
   - Nimble (~> 7.0)
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
@@ -26,7 +26,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
-    - NFAToolkit
     - Nimble
     - Nimble-Snapshots
     - Quick
@@ -34,15 +33,17 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   NFATipsUI:
     :path: "../"
+  NFAToolkit:
+    :path: "../../NFAToolkit"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  NFATipsUI: 5f44d005068e50017f71e92db863beb1e1c5dfbf
-  NFAToolkit: 35d8391f4b55c0a6d7b7cb1b0f0d17392f6b1b1e
+  NFATipsUI: a26a6f7a8f2eab7bfd7fca293accadb49198e70c
+  NFAToolkit: 2c93eb466a8cbcfb160cc693c3706c587c7522e7
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 25c933bc57fc9a693536af4416c0f57c48e30201
+PODFILE CHECKSUM: 280fdeddcc856a0b0c311c50f53ae7771ecc4fae
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
